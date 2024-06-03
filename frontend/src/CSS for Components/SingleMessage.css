@@ -1,0 +1,26 @@
+.a_single_message{
+    width: 393px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.a_single_message p{
+    margin: 0;
+    color: white;
+}
+
+.sent_time{
+    /* width: 100%; */
+    height: 20px;
+    position: relative;
+}
+
+.sent_time p{
+    position: absolute;
+    right: 0;
+}

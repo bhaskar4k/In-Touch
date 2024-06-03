@@ -1,0 +1,143 @@
+#profile_dashboard_container{
+    width: 99%;
+    height: 270px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+    z-index: 0;
+    position: relative;
+}
+
+.profile_dashboard_image_container{
+    width: 220px;
+    height: 220px;
+    margin-top: 25px;
+    float: left;
+    margin-left: 25px;
+}
+
+.profile_dashboard_image_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.profile_dashboard_info_container{
+    width: 900px;
+    height: 250px;
+    float: right;
+    margin-top: 10px;
+}
+
+.profile_user_name{
+    margin: 0;
+    font-size: 50px;
+    color: white;
+}
+
+.profile_username_follower_following_container{
+    display: flex;
+}
+
+.profile_username_follower_following_container button{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 38px;
+}
+
+.profile_bio{
+    color: white;
+    font-size: 20px;
+    padding-right: 25px;
+}
+
+.profile_dashboard_info_container button{
+    padding: 10px 20px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.pfl_dashboard_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.message_btn{
+    margin-left: 20px;
+}
+
+#container_changeProfilePhotoComponent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    transition: 0.3s all ease-in-out;
+    overflow: hidden;
+    z-index: 200;
+}
+
+#close_changeProfilePhotoComponent{
+    color: white;
+    font-size: 25px;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid rgb(0, 140, 255);
+    padding: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#view_image{
+    width: 680px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    display: none;
+}
+
+.view_image_close_btn{
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px 10px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 140, 255);
+}
+
+#following_list_parent, #follower_list_parent{
+    width: 600px;
+    max-height: 0px;
+    position: absolute;
+    top: 160px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    background-color: rgb(23, 23, 23);
+    margin-left: 280px;
+}
+
+.following_follower_list_heading{
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}

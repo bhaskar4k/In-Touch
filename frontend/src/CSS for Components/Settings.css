@@ -1,0 +1,109 @@
+.settings{
+    width: 700px;
+    height: 600px;
+    z-index: 100;
+}
+
+.change_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.change_info p{
+    width: 200px;
+    background-color: rgb(73, 73, 73);
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 25px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.change_info .change_input_all{
+    width: 350px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 600;
+    height: 50px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.change_input_birthday{
+    width: 368px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-between;
+}
+
+.change_input_birthday input{
+    width: 30%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 600;
+    height: 50px;
+    margin-top: 15px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.change_info button{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    border: none;
+    padding: 10px 17px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    margin-right: 6px;
+}
+
+.change_info button:hover{
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+
+.delete_account{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.delete_account button{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    margin-top: 70px;
+}
+
+#settings_close_btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    font-size: 25px;
+    padding: 0px 7px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 140, 255);
+}

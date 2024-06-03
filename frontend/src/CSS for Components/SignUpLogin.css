@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.signup_login_box_parent{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.signup_login_box_child{
+    width: 1000px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: rgb(0, 140, 255);
+}
+
+.signup_login_box_grandchild{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#signup_login_type_name{
+    /* float: left; */
+    position: absolute;
+    left: 0px;
+    width: 400px;
+    height: 700px;
+    color: white;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+
+.left_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text1{
+    font-size: 60px;
+    text-align: left;
+}
+
+#slider_button{
+    cursor: pointer;
+    text-align: left;
+}
+
+#underline1{
+    display: block;
+    width: 178px;
+    margin-top: -18px;
+    border-top: 5px solid white;
+    position: absolute;
+}
+
+/* #underline1{
+    
+} */
+
+#form_container{
+    width: 600px;
+    height: 706px;
+    position: absolute;
+    top: -20px;
+    left: 400px;
+    transition: 0.5s all ease-in-out;
+}
+
+#signup_login_form{
+    width: 100%;
+    height: 100%;
+    margin-top: -3.5px;
+    background-color: rgb(255, 240, 222);
+    position: relative;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.5s all ease-in-out;
+}
+
+.heading_of_form{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main_form{
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 600px;
+}
+
+.input_field{
+    width: 98.5%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(0, 140, 255);
+    transition: 0.3s border ease-in-out;
+    margin-top: -5px;
+}
+
+.input_field:hover{
+    border: 2px solid rgb(255, 153, 0);
+}
+
+.input_field:focus {
+    border: 2px solid rgb(0, 174, 0);
+}
+
+.label{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.date_of_birth{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-right: 6.5px;
+}
+
+.gender{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender_selection{
+    width: 150px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 1px 5px;
+    border: 2px solid rgb(0, 140, 255);
+    transition: 0.3s border ease-in-out;
+}
+
+.gender_selection:hover{
+    border: 2px solid rgb(255, 153, 0);
+}
+
+.gender_selection:focus {
+    border: 2px solid rgb(0, 174, 0);
+}
+
+.gender_selection option{
+    font-size: 16px;
+}
+
+
+#signup_login_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    --b: 3px;  
+    --s: .45em; 
+    --color: #373B44;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    font-weight: 500;
+
+  
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: black;
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 20px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+#signup_login_button:hover,
+#signup_login_button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+#signup_login_button:active {
+    background: var(--color);
+    color: #fff;
+}

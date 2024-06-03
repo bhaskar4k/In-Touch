@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.parent_of_header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(36, 36, 36);
+    z-index: 99;
+    user-select: none;
+}
+
+.child_of_header{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app_name h1{
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 50px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.searchbar_container{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 100px;
+}
+
+#searchbar_placeholder{
+    position: absolute;
+    top: -2px;
+    margin-left: 20px;
+    z-index: 100;
+    font-weight: 700;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    transition: 0.1s all ease-in-out;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.searchbar_input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.header_controls{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 8px;
+    right: 0;
+}
+
+.header_controls img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#user_setting_activity{
+    width: 170px;
+    height: 0px;
+    position: relative;
+    top: 20px;
+    padding: 0px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.user_activity_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+
+.button1{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    border-radius: 50px;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s all ease-in-out;
+}
+
+.button1:hover{
+    background-color: black;
+    color: white;
+}
+
+.header_controls_parent{
+    height: 250px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+
+#settings_div{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    background-color: rgb(36, 36, 36);
+    box-shadow: rgba(219, 219, 219, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: none;
+    z-index: 99;
+}
+
+.create_post_button{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+#create_post_div{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(36, 36, 36);
+    z-index: 101;
+    transition: 0.3s all ease-in-out;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#notification_div{
+    width: 0px;
+    max-height: 0px;
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1000;
+    transition: 0.3s all ease-in-out;
+    border: none;
+    border-radius: 15px;
+    right: 0;
+}
+
+#notification_div::-webkit-scrollbar {
+  display: none;
+}
+
+.noti_div{
+    margin-top: -8px;
+    /* position: relative; */
+}
+
+#pending_noti{
+    position: absolute;
+    bottom: -9px;
+    right: 256px;
+    background-color: red;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+}
+
+.post_and_chatting_icon{
+    width: 120px;
+    display: flex;
+    margin-top: -1px;
+    justify-content: space-between;
+}

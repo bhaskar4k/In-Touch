@@ -1,0 +1,46 @@
+.a_single_comment{
+    width: 680px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: rgb(73, 73, 73);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.cmnt_header{
+    width: 100%;
+    display: flex;
+}
+
+.cmnt_creator_dp{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cmnt_creator_dp img{
+    width: 100%;
+    height: 100%;
+}
+
+.cmnt_info p{
+    margin: 0;
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.cmnt_creator_name{
+    font-weight: 600;
+}
+
+.cmnt_creating_time{
+    font-weight: 300;
+    font-size: 14px;    
+}
+
+.cmnt_desc{
+    margin: 0;
+    padding-top: 10px;
+}

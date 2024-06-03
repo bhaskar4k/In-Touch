@@ -1,0 +1,56 @@
+#following_box_container{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    background-color: rgb(23, 23, 23);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#following_box{
+    width: 99%;
+    height: auto;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#following_box::-webkit-scrollbar {
+    width: 5px;
+}
+
+#following_box::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+}
+
+#following_box::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+#following_box::-webkit-scrollbar-track {
+    background-color: rgb(23, 23, 23);
+}
+
+.load_more_following_btn{
+    position: absolute;
+    background-color: rgb(0, 145, 255);
+    right: 10px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.no_more_following{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    bottom: 10px;
+    color: white;
+    padding-top: 10px;
+}

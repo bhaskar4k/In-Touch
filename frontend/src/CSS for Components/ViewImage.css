@@ -1,0 +1,20 @@
+#view_image_container{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    left: 0;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid rgb(0, 140, 255);
+    background-color: white;
+}
+
+#view_image_container img{
+    width: 97%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}

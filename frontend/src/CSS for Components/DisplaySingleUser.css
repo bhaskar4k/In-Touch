@@ -1,0 +1,33 @@
+.a_single_user{
+    width: 96%;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: rgb(73, 73, 73);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.user_header{
+    width: 100%;
+    display: flex;
+}
+
+.user_dp{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user_dp img{
+    width: 100%;
+    height: 100%;
+}
+
+.display_user_name{
+    font-weight: 600;
+    padding-left: 10px;
+    margin: 0;
+    padding-top: 8px;
+}

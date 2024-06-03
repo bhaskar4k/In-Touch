@@ -1,0 +1,35 @@
+.a_single_chat{
+    width: 370px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: rgb(73, 73, 73);
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat_header{
+    width: 100%;
+    display: flex;
+}
+
+.chat_creator_dp{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.chat_creator_dp img{
+    width: 100%;
+    height: 100%;
+}
+
+.chat_creator_name{
+    font-weight: 600;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 18px;
+    padding-top: 8px;
+}

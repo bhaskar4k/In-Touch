@@ -1,0 +1,38 @@
+#profile_container{
+    margin-top: 70px;
+    padding-top: 10px;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    background-color: rgb(73, 73, 73);
+    width: 99vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#profile_container::-webkit-scrollbar{
+  display: none;
+}
+
+#rest_of_profile::-webkit-scrollbar{
+  display: none;
+}
+
+.profile_dashboard, #rest_of_profile{
+    max-width: 90%; 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cropping_container{
+    min-width: 600px;
+    min-height: 600px;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.cropping_image{
+    max-width: 700px;
+    max-height: 700px;
+}

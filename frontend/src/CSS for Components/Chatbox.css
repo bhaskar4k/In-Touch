@@ -1,0 +1,93 @@
+#personal_chat_parent{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(36, 36, 36);
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+}
+
+.personal_chat_person{
+    background-color: rgb(57, 57, 57);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#personal_chat_box{
+    background-color: rgb(57, 57, 57);
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#scrollable_chatbox{
+    overflow-y: scroll;
+    margin-top: 30px;
+}
+
+#scrollable_chatbox::-webkit-scrollbar {
+  display: none;
+}
+
+.personal_chat_msg_send_area{
+    height: 60px;
+    background-color: rgb(57, 57, 57);
+    width: 760px;
+    position: absolute;
+    bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#msg_input{
+    width: 700px;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+    padding: 3px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.msg_send_btn{
+    font-size: 30px;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.load_more_msg{
+  width: 25px;
+  height: 25px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.load_more_msg_spinner {
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+  color: white;
+  position: absolute;
+  left: 50%;
+  margin-bottom: 30px;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

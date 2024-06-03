@@ -1,0 +1,19 @@
+#ultimate_parent_of_feed{
+    background-color: rgb(73, 73, 73);
+    width: 100vw;
+    margin-top: 70px;
+    user-select: none;
+}
+
+#actual_feed_container{
+    max-width: 90%;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+
+#actual_feed_container::-webkit-scrollbar {
+  display: none;
+}

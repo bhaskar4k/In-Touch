@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+  <Resource name="jdbc/Touch" 
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="10000000" maxIdle="10000000" maxWait="10000000"
+               username="root" password="root" 
+               driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/touch?useSSL=false"/>
+
+</Context>
