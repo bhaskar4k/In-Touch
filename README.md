@@ -1,3 +1,5 @@
+Full walkthrough video of this project - https://youtu.be/s7SPGE-qIiA?si=m6LxpbyuUsM8Nm1k
+
 𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸 : React.js, Node.js, Express.js, JAVA, SQL, Rest API, MySQL, MongoDB
 
 • Created a fully functional social media website where users can create accounts and then log in. Users can upload, edit, and delete posts. Users can like, comment on posts, search other users, and can follow them and can view whom they are following or who are followers of them. Users also can engage in 𝟭𝘃𝟭 𝗰𝗵𝗮𝘁𝘀.
